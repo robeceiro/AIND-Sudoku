@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Once naked twins are identified in a given unit, this adds a constraint to other boxes in the same unit: none of them can have any of the naked twins digits as both can only be in one of the naked twins boxes. Hence, this constraint can be applied to all other boxes in the unit, therefore reducing possibilites. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Original sudoku rules impose some contraints: all numbers from 1 to 9 must be in all rows, all columns and all 3x3 squares. Diagonal sudoku only imposes a new contraint: diagonals must have all numbers from 1 to 9 as well. Current provided algorithms already take care of handling all constraints imposed through list 'unitlist'. Adding diagonals to 'unitlist' will imposed the desired constraints.
 
 ### Install
 
